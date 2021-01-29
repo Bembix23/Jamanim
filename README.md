@@ -37,6 +37,7 @@ yarn encore dev
 Vous devez ensuite créer la base de données de notre site, et importer les éléments que nous avons déjà créés.
 
 ```
+composer install
 php bin/console make:migration
 php bin/console doctrine:migrations:migrate
 php bin/console doctrine:fixtures:load
